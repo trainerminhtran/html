@@ -56,3 +56,4 @@
         + pass github: trainer.minhtran!@2018
 6. Copy config server: 
     - sudo cp 000-default.conf example1.com.conf
+    - sudo a2ensite example1.com.conf
