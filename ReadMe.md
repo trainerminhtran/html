@@ -11,9 +11,16 @@
         + sudo ls -la /root
     - Copy folder/file from local to server
         + rsync -avz --progress path/to/local user@ipserver:'part/to/server/'
+    - Copy in server
+        - Copy: sudo cp -R /opt/moodle /var/www/html/
+        - Moodledata: sudo mkdir /var/moodledata
+        - sudo chown -R www-data /var/moodledata
+        - sudo chmod -R 777 /var/moodledata
+        - sudo chmod -R 0755 /var/www/html/moodle
     - Permiss:
         + Enable: sudo chmod -R 777 /var/www/html/moodle
         + Disable: sudo chmod -R 0755 /var/www/html/moodle
+
 
 
 2. Set Up Moodle on UbunTu
@@ -47,3 +54,5 @@
         + git push -u origin master
         + user github: trainer.minhtran@gmail.com
         + pass github: trainer.minhtran!@2018
+6. Copy config server: 
+    - sudo cp 000-default.conf example1.com.conf
